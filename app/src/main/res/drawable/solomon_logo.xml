@@ -1,87 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- res/drawable/solomon_logo.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="120dp"
     android:height="120dp"
-    android:viewportWidth="120"
-    android:viewportHeight="120">
-
-    <!-- Background circle with gradient effect -->
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Crown representing wisdom -->
     <path
-        android:pathData="M60,10 A50,50 0 1,1 60,110 A50,50 0 1,1 60,10 Z"
-        android:fillColor="#667eea"/>
-
-    <!-- Inner circle for depth -->
+        android:fillColor="@color/accent_color"
+        android:pathData="M12,2L15.09,8.26L22,9L17,14L18.18,21L12,17.77L5.82,21L7,14L2,9L8.91,8.26L12,2Z" />
+    <!-- Book base -->
     <path
-        android:pathData="M60,18 A42,42 0 1,1 60,102 A42,42 0 1,1 60,18 Z"
-        android:fillColor="#764ba2"/>
-
-    <!-- Brain/AI symbol representing intelligence -->
+        android:fillColor="@color/primary_color"
+        android:pathData="M4,6H20A2,2 0 0,1 22,8V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V8A2,2 0 0,1 4,6Z" />
+    <!-- Book pages -->
     <path
-        android:pathData="M45,35 Q35,30 35,40 Q30,35 30,45 Q35,50 45,45 Q50,55 60,50 Q70,55 75,45 Q85,50 90,45 Q95,35 85,40 Q85,30 75,35 Q70,25 60,30 Q50,25 45,35 Z"
-        android:fillColor="#ffffff"
-        android:fillAlpha="0.9"/>
-
-    <!-- Central S for Solomon -->
-    <path
-        android:pathData="M50,45 Q45,40 55,40 Q65,40 65,50 Q65,55 55,55 Q50,55 50,60 Q50,65 55,65 Q65,65 70,60"
-        android:strokeColor="#ffffff"
-        android:strokeWidth="3"
-        android:fillColor="none"
-        android:strokeLineCap="round"/>
-
-    <!-- Prompt lines representing text/prompts -->
-    <path
-        android:pathData="M40,70 L50,70"
-        android:strokeColor="#ffffff"
-        android:strokeWidth="2"
-        android:fillColor="none"
-        android:strokeLineCap="round"
-        android:fillAlpha="0.8"/>
-
-    <path
-        android:pathData="M55,70 L80,70"
-        android:strokeColor="#ffffff"
-        android:strokeWidth="2"
-        android:fillColor="none"
-        android:strokeLineCap="round"
-        android:fillAlpha="0.8"/>
-
-    <path
-        android:pathData="M40,78 L70,78"
-        android:strokeColor="#ffffff"
-        android:strokeWidth="2"
-        android:fillColor="none"
-        android:strokeLineCap="round"
-        android:fillAlpha="0.6"/>
-
-    <path
-        android:pathData="M40,86 L60,86"
-        android:strokeColor="#ffffff"
-        android:strokeWidth="2"
-        android:fillColor="none"
-        android:strokeLineCap="round"
-        android:fillAlpha="0.4"/>
-
-    <!-- Sparkle effects for AI magic -->
-    <path
-        android:pathData="M25,25 L27,27 L25,29 L23,27 Z"
-        android:fillColor="#ffffff"
-        android:fillAlpha="0.7"/>
-
-    <path
-        android:pathData="M95,30 L97,32 L95,34 L93,32 Z"
-        android:fillColor="#ffffff"
-        android:fillAlpha="0.7"/>
-
-    <path
-        android:pathData="M85,85 L87,87 L85,89 L83,87 Z"
-        android:fillColor="#ffffff"
-        android:fillAlpha="0.7"/>
-
-    <path
-        android:pathData="M30,90 L32,92 L30,94 L28,92 Z"
-        android:fillColor="#ffffff"
-        android:fillAlpha="0.7"/>
-
+        android:fillColor="@color/white"
+        android:pathData="M4,8V18H11V8H4M13,8V18H20V8H13Z" />
 </vector>
+

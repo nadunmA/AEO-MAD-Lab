@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors (60%) - Main brand colors -->
-    <color name="primary_purple">#6C63FF</color>
-    <color name="primary_dark_purple">#5A52D5</color>
-    <color name="primary_light_purple">#8B84FF</color>
 
-    <!-- Secondary Colors (30%) - Supporting colors -->
-    <color name="secondary_white">#FFFFFF</color>
-    <color name="secondary_light_gray">#F8F9FA</color>
-    <color name="secondary_gray">#E9ECEF</color>
-    <color name="secondary_dark_gray">#6C757D</color>
+    <!-- PRIMARY COLORS -->
+    <color name="primary_color">#1A237E</color>
+    <color name="primary_light">#534BAE</color>
+    <color name="primary_dark">#000051</color>
+    <color name="primary_variant">#283593</color>
+    <color name="background_color">#121212</color>
 
-    <!-- Accent Colors (10%) - Call-to-action and highlights -->
-    <color name="accent_orange">#FF6B35</color>
-    <color name="accent_green">#28A745</color>
-    <color name="accent_red">#DC3545</color>
 
-    <!-- Text Colors -->
-    <color name="text_primary">#212529</color>
-    <color name="text_secondary">#6C757D</color>
-    <color name="text_white">#FFFFFF</color>
+    <!-- SECONDARY COLORS -->
+    <color name="secondary_color">#37474F</color>
+    <color name="secondary_light">#62727B</color>
+    <color name="secondary_dark">#102027</color>
+    <color name="secondary_variant">#455A64</color>
 
-    <!-- Background Colors -->
-    <color name="background_white">#FFFFFF</color>
-    <color name="background_light">#F8F9FA</color>
-    <color name="background_card">#FFFFFF</color>
+    <!-- ACCENT COLORS -->
+    <color name="accent_color">#FF6F00</color>
+    <color name="accent_light">#FF9F40</color>
+    <color name="accent_dark">#C43E00</color>
+    <color name="accent_variant">#FF8F00</color>
 
-    <!-- System Colors -->
-    <color name="status_bar">#5A52D5</color>
+    <!-- TEXT COLORS -->
+    <color name="primary_text_color">#FFFFFF</color>
+    <color name="secondary_text_color">#B0BEC5</color>
+    <color name="accent_text_color">#FF6F00</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_on_accent">#000000</color>
+
+    <!-- SYSTEM COLORS -->
+    <color name="error_color">#CF6679</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="info_color">#2196F3</color>
+
+    <!-- STANDARD COLORS -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
-    <color name="black_overlay">#80000000</color>
+
 </resources>
