@@ -46,12 +46,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:alpha="0.3"
+                android:alpha="0.2"
                 android:contentDescription="@string/logo_shadow_description"
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                android:src="@drawable/solomon_logo"
-                app:tint="@color/primary_color" />
+                android:src="@drawable/solomon" />
 
             <!-- Main logo -->
             <ImageView
@@ -60,8 +59,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/app_logo_description"
                 android:scaleType="centerInside"
-                android:src="@drawable/solomon_logo"
-                app:tint="@color/accent_color" />
+                android:src="@drawable/solomon" />
 
         </FrameLayout>
 
