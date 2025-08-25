@@ -65,4 +65,23 @@
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
 
+    <color name="primary_white">#FFFFFF</color>
+    <color name="primary_light_gray">#F5F5F5</color>
+
+    <!-- Secondary Colors (30%) - Input fields and secondary elements -->
+    <color name="secondary_gray">#E0E0E0</color>
+    <color name="secondary_dark_gray">#9E9E9E</color>
+    <color name="text_gray">#757575</color>
+
+    <!-- Accent Colors (10%) - Buttons and interactive elements -->
+    <color name="accent_black">#000000</color>
+    <color name="accent_blue">#1976D2</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <!-- Additional colors for icons and text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    <color name="divider">#BDBDBD</color>
+
 </resources>

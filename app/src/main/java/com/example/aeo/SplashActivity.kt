@@ -1,9 +1,10 @@
-package com.example.aeo   // FIX package to match project
+package com.example.aeo
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,11 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity : AppCompatActivity() {
 
-    private lateinit var logoImage: ImageView
-    private lateinit var appNameText: TextView
-    private lateinit var taglineText: TextView
-
     companion object {
+        private const val TAG = "SplashActivity"
         private const val SPLASH_DELAY = 3000L // 3 seconds
     }
 
@@ -23,47 +21,57 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Initialize views
-        initViews()
+        // Start animations safely
+        startAnimationsSafely()
 
-        // Start animations
-        startAnimations()
-
-        // Navigate to main activity after delay
-        navigateToMainActivity()
+        // Navigate after delay
+        navigateToSignUp()
     }
 
-    private fun initViews() {
-        logoImage = findViewById(R.id.iv_logo)
-        appNameText = findViewById(R.id.tv_app_name)
-        taglineText = findViewById(R.id.tv_tagline)
+    private fun startAnimationsSafely() {
+        try {
+            // Try to find views and animate them
+            val logoImage = findViewById<ImageView>(R.id.iv_logo)
+            val appNameText = findViewById<TextView>(R.id.tv_app_name)
+            val taglineText = findViewById<TextView>(R.id.tv_tagline)
+
+            // Check if animation files exist and animate
+            animateView(logoImage, R.anim.scale_up, 500)
+            animateView(appNameText, R.anim.fade_in, 1000)
+            animateView(taglineText, R.anim.slide_up, 1500)
+
+        } catch (e: Exception) {
+            Log.e(TAG, "Animation error (app will continue without animations)", e)
+            // Don't crash - just continue without animations
+        }
     }
 
-    private fun startAnimations() {
-        val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
-        val slideUp = AnimationUtils.loadAnimation(this, R.anim.slide_up)
-        val scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up)
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            logoImage.startAnimation(scaleUp)
-        }, 500)
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            appNameText.startAnimation(fadeIn)
-        }, 1000)
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            taglineText.startAnimation(slideUp)
-        }, 1500)
+    private fun animateView(view: android.view.View?, animationResource: Int, delay: Long) {
+        view?.let { v ->
+            try {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    try {
+                        val animation = AnimationUtils.loadAnimation(this, animationResource)
+                        v.startAnimation(animation)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Failed to load animation resource: $animationResource", e)
+                    }
+                }, delay)
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to schedule animation for view", e)
+            }
+        }
     }
 
-    private fun navigateToMainActivity() {
+    private fun navigateToSignUp() {
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-            @Suppress("DEPRECATION")
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            try {
+                val intent = Intent(this, SignUpActivity::class.java)
+                startActivity(intent)
+                finish()
+            } catch (e: Exception) {
+                Log.e(TAG, "Navigation failed", e)
+            }
         }, SPLASH_DELAY)
     }
 }
