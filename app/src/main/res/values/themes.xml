@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="Base.Theme.AEO" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Set primary color for buttons -->
+        <item name="colorPrimary">@color/gradient_end</item>
+        <item name="colorOnPrimary">@color/primary_white</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
+    <!-- Main app theme -->
     <style name="Theme.AEO" parent="Base.Theme.AEO" />
+
+    <!-- Optional: Splash screen theme -->
+    <style name="Theme.AEO.Splash" parent="Base.Theme.AEO">
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>

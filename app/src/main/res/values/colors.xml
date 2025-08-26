@@ -43,9 +43,10 @@
     <color name="text_disabled">#666680</color> <!-- Disabled text -->
 
     <!-- GRADIENT COLORS -->
-    <color name="gradient_start">#8A2BE2</color> <!-- Purple start -->
+    <color name="gradient_start">#1A1A2E</color> <!-- Dark start -->
     <color name="gradient_middle">#6A1B9A</color> <!-- Purple middle -->
-    <color name="gradient_end">#1A1A2E</color> <!-- Dark end -->
+    <color name="gradient_end">#8A2BE2</color> <!-- Bright end -->
+
 
     <!-- SYSTEM COLORS -->
     <color name="error_color">#FF4444</color> <!-- Red for errors -->
@@ -79,9 +80,31 @@
     <color name="accent_green">#4CAF50</color>
 
     <!-- Additional colors for icons and text -->
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+
     <color name="text_hint">#BDBDBD</color>
     <color name="divider">#BDBDBD</color>
+
+    <color name="primary_background">#FFFFFF</color>
+
+
+    <!-- 30% Secondary Colors - Cards and secondary elements -->
+
+    <color name="secondary_medium">#333333</color>
+
+
+    <!-- 10% Accent Colors - Buttons and highlights -->
+    <color name="accent_primary">#007AFF</color>
+    <color name="accent_purple">#6366F1</color>
+    <color name="accent_orange">#FF9500</color>
+
+    <!-- Additional UI colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#FFFFFF</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="skip_text">#999999</color>
+
+    <color name="btn_color">#C500FD</color>
+
+
 
 </resources>

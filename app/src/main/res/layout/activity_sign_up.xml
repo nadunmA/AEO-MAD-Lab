@@ -3,175 +3,182 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary_white"
+    android:background="@drawable/splash_gradient_background"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="32dp">
+        android:padding="40dp">
 
         <!-- Title -->
         <TextView
             android:id="@+id/tv_sign_up_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:text="@string/sign_up"
             android:textColor="@color/text_primary"
-            android:textSize="32sp"
+            android:textSize="34sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Email Input -->
         <EditText
             android:id="@+id/et_email"
             android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="48dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/rounded_edittext_background"
-            android:hint="@string/email_hint"
+            android:hint="example@email.com"
             android:inputType="textEmailAddress"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
+            android:autofillHints="emailAddress"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:nextFocusDown="@+id/et_first_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_sign_up_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_sign_up_title" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Name Container -->
         <LinearLayout
             android:id="@+id/ll_name_container"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_email"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_email">
+            app:layout_constraintEnd_toEndOf="parent">
 
             <!-- First Name -->
             <EditText
                 android:id="@+id/et_first_name"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_marginEnd="8dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="12dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_edittext_background"
-                android:hint="@string/first_name_hint"
+                android:hint="e.g., John"
                 android:inputType="textPersonName"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
+                android:autofillHints="name"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:nextFocusDown="@+id/et_last_name" />
 
             <!-- Last Name -->
             <EditText
                 android:id="@+id/et_last_name"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_marginStart="8dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_edittext_background"
-                android:hint="@string/last_name_hint"
+                android:hint="e.g., Doe"
                 android:inputType="textPersonName"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
+                android:autofillHints="name"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                android:nextFocusDown="@+id/et_password" />
         </LinearLayout>
 
         <!-- Password Input -->
         <EditText
             android:id="@+id/et_password"
             android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/rounded_edittext_background"
-            android:hint="@string/password_hint"
+            android:hint="Enter a strong password"
             android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
+            android:autofillHints="password"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_name_container"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ll_name_container" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:nextFocusDown="@+id/et_confirm_password" />
 
         <!-- Confirm Password Input -->
         <EditText
             android:id="@+id/et_confirm_password"
             android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/rounded_edittext_background"
-            android:hint="@string/confirm_password_hint"
+            android:hint="Re-enter your password"
             android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
+            android:autofillHints="password"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_hint"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_password" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:nextFocusDown="@+id/btn_create_account" />
 
         <!-- Create Account Button -->
         <Button
             android:id="@+id/btn_create_account"
-            android:layout_width="200dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/rounded_button_background"
             android:text="@string/create_account"
             android:textColor="@color/primary_white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_confirm_password"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_confirm_password" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Already have account section -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_create_account"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_create_account">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/already_have_account"
                 android:textColor="@color/text_secondary"
-                android:textSize="14sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/tv_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="6dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/login_text"
                 android:textColor="@color/accent_blue"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
