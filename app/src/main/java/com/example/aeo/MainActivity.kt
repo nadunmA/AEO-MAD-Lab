@@ -28,17 +28,25 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.nav_home -> true // already on home
                 R.id.nav_favorites -> {
-                    val intent = Intent(this, FavoriteActivity::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, FavoriteActivity::class.java))
                     true
                 }
-                R.id.nav_search -> true
-                R.id.nav_profile -> true
+                R.id.nav_news -> {
+                    startActivity(Intent(this, NewsActivity::class.java))
+                    true
+                }
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
                 else -> false
             }
         }
     }
 }*/
+
+
+
 
 package com.example.aeo
 
@@ -49,6 +57,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,6 +70,14 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // 👉 Click first card to open PromptDetailActivity
+        val cardFirst = findViewById<CardView>(R.id.cardFirst)
+        cardFirst.setOnClickListener {
+            val intent = Intent(this, PromptDetailActivity::class.java)
+            intent.putExtra("title", "Fashion Feature") // optional: send dynamic data
+            startActivity(intent)
         }
 
         // Bottom Navigation
@@ -86,5 +103,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
 

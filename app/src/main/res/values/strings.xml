@@ -169,6 +169,10 @@
     <string name="terms_of_service">View Terms Of Services</string>
     <string name="copy_debug">Copy Debug Info</string>
 
+    <string name="title_fashion_feature">Fashion Feature</string>
+    <string name="content_desc_ai_bar">AI bar</string>
+    <string name="content_desc_fashion_man">Fashion-forward man in vintage convertible</string>
+    <string name="prompt_text">A fashion-forward man sits confidently in a vintage convertible, sunlight casting sharp highlights over his tailored arm and modern accessories. Cartier earring, black smartwatch, dark Ray-Ban sunglasses. Dressed in navy long-sleeve, holding a tan leather bag — editorial-style composition, sharp shadows, muted tones with bold contrast.</string>
 
 
 </resources>
