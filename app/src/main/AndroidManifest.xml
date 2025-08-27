@@ -58,6 +58,7 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
 
+        <activity android:name=".FavoriteActivity" android:exported="false" />
 
 
     </application>

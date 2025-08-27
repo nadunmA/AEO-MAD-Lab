@@ -126,6 +126,11 @@
 
     <string name="suggest">Suggest</string>
 
-
+    <string name="back">Back</string>
+    <string name="no_more_favorites">no more favorites</string>
+    <string name="back_button_desc">Navigate back</string>
+    <string name="second_image_desc">Second favorite image</string>
+    <string name="third_image_desc">Third favorite image</string>
+    <string name="remove_favorite_desc">Remove from favorites</string>
 
 </resources>
