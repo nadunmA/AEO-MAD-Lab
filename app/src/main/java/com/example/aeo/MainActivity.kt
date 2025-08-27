@@ -77,7 +77,10 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this, NewsActivity::class.java))
                     true
                 }
-                R.id.nav_profile -> true // implement Profile later
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
                 else -> false
             }
         }

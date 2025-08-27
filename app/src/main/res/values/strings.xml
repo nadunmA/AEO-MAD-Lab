@@ -144,4 +144,31 @@
     <string name="email_text">Johond32@gmail.com</string>
 
 
+    <string name="greeting">Hello, Nadun Algoda</string>
+    <string name="profile_image_desc">Profile Image</string>
+
+    <string name="manage_profile">Manage Profile</string>
+    <string name="share_profile_link">Share Profile Link</string>
+    <string name="help_info">Help And Info</string>
+    <string name="help_faqs">Help And FAQs</string>
+    <string name="privacy_policy">View Privacy Policy</string>
+    <string name="terms_services">View Terms Of Services</string>
+    <string name="copy_debug_info">Copy Debug Info</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="agent_support">Agent Support</string>
+    <string name="version">version: 1.5.17</string>
+    <string name="email">Johond32@gmail.com</string>
+
+
+    <string name="profile_image">Profile Image</string>
+
+    <string name="share_profile">Share Profile Link</string>
+
+    <string name="help_faq">Help And FAQs</string>
+
+    <string name="terms_of_service">View Terms Of Services</string>
+    <string name="copy_debug">Copy Debug Info</string>
+
+
+
 </resources>
