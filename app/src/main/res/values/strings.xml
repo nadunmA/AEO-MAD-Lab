@@ -133,4 +133,10 @@
     <string name="third_image_desc">Third favorite image</string>
     <string name="remove_favorite_desc">Remove from favorites</string>
 
+
+    <string name="news1_desc">News image 1</string>
+    <string name="news2_desc">News image 2</string>
+    <string name="news3_desc">News image 3</string>
+    <string name="latest_news">Latest News</string>
+
 </resources>

@@ -59,6 +59,8 @@
             android:exported="false" />
 
         <activity android:name=".FavoriteActivity" android:exported="false" />
+        <activity android:name=".NewsActivity" android:exported="false" />
+
 
 
     </application>
