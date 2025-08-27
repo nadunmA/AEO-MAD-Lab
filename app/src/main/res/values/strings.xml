@@ -119,4 +119,13 @@
     <string name="copilot_desc">Copilot Logo</string>
     <string name="gemini_desc">Gemini Logo</string>
 
+
+    <string name="hello_nadun">Hello, Nadun</string>
+
+    <string name="popular">Popular</string>
+
+    <string name="suggest">Suggest</string>
+
+
+
 </resources>
