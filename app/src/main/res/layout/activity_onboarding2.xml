@@ -1,117 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/main"
     android:layout_height="match_parent"
     android:background="@drawable/splash_gradient_background"
-    android:padding="24dp">
+    android:padding="64dp">
 
-    <!-- Images at the top -->
-    <LinearLayout
-        android:id="@+id/images_container"
+    <!-- Website Preview -->
+    <ImageView
+        android:id="@+id/web"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/web"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Website Preview -->
-        <ImageView
-            android:id="@+id/web"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/web"
-            android:layout_marginBottom="16dp" />
+    <!-- QR Code -->
+    <ImageView
+        android:id="@+id/qr"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/qr"
+        app:layout_constraintTop_toBottomOf="@id/web"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
-        <!-- QR Code -->
-        <ImageView
-            android:id="@+id/qr"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/qr" />
-    </LinearLayout>
-
-    <!-- Text UNDER images -->
-    <LinearLayout
-        android:id="@+id/text_section"
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_discover_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:text="Transform Words Into Visual Masterpieces"
+        android:textSize="24sp"
+        android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/images_container"
+        android:textColor="@color/text_primary"
+        app:layout_constraintTop_toBottomOf="@id/qr"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
 
-        <TextView
-            android:id="@+id/tv_discover_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transform Words Into Visual Masterpieces"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"
-            android:gravity="center" />
-
-        <TextView
-            android:id="@+id/website_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Prefer big screens?\nVisit our Website\nsolomonprompts.site"
-            android:textSize="16sp"
-            android:textColor="@color/text_secondary"
-            android:gravity="center"
-            android:layout_marginTop="8dp"
-            android:lineSpacingExtra="4sp" />
-    </LinearLayout>
-
-    <!-- Bottom Navigation -->
-    <LinearLayout
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/website_info"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingTop="20dp"
-        android:paddingBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Prefer big screens?\nVisit solomonprompts.site"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tv_discover_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
 
-        <Button
-            android:id="@+id/btn_skip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/skip_button"
-            android:textColor="@color/skip_text"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="@android:color/transparent"
-            android:padding="16dp" />
+    <!-- Skip Button -->
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_button"
+        android:textColor="@color/skip_text"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/btn_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/next_button"
-            android:textColor="@color/button_text"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="@drawable/button_next_background"
-            android:paddingHorizontal="32dp"
-            android:paddingVertical="12dp" />
-    </LinearLayout>
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:textColor="@color/button_text"
+        android:background="@drawable/button_next_background"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
