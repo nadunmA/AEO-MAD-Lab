@@ -41,6 +41,7 @@
     <color name="text_on_secondary">#FFFFFF</color> <!-- Text on gray -->
     <color name="text_on_accent">#000000</color> <!-- Text on cyan -->
     <color name="text_disabled">#666680</color> <!-- Disabled text -->
+    <color name="text_sub_section">#CECECE</color>
 
     <!-- GRADIENT COLORS -->
     <color name="gradient_start">#1A1A2E</color> <!-- Dark start -->
