@@ -30,6 +30,10 @@
             android:name=".OnboardingActivity2"
             android:exported="false" />
 
+        <activity
+            android:name=".Onboarding3"
+            android:exported="false" />
+
         <!-- Auth screens -->
         <activity
             android:name=".SignUpActivity"
@@ -53,6 +57,8 @@
         <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
+
+
 
     </application>
 </manifest>

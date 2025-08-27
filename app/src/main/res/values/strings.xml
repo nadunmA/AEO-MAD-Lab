@@ -111,6 +111,12 @@
     <string name="skip_button">SKIP</string>
     <string name="next_button">NEXT</string>
 
+    <string name="app_title">PromptCraft</string>
+    <string name="app_description">Describe your vision, generate stunning prompts with Copilot, and bring them to life with AI-generated images.</string>
 
+    <string name="gpt_desc">GPT Logo</string>
+    <string name="grok_desc">Grok Logo</string>
+    <string name="copilot_desc">Copilot Logo</string>
+    <string name="gemini_desc">Gemini Logo</string>
 
 </resources>

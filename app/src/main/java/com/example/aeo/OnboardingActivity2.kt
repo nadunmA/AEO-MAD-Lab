@@ -16,7 +16,7 @@ class OnboardingActivity2 : AppCompatActivity() {
 
         btnNext.setOnClickListener {
             // After onboarding2 → go to SignUp
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Onboarding3::class.java))
             finish()
         }
 

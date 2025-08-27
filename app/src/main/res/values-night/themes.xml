@@ -1,21 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme for dark mode -->
+
+    <!-- Base Dark Theme -->
     <style name="Base.Theme.AEO" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-
-        <!-- Don't apply splash background to all activities -->
-        <!-- <item name="android:windowBackground">@drawable/splash_gradient_background</item> -->
-
-        <!-- Ensure status bar is visible in dark mode -->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <!-- Main theme that other activities will use -->
     <style name="Theme.AEO" parent="Base.Theme.AEO" />
 
-    <!-- Separate splash theme with gradient background -->
+    <!-- Splash Theme -->
     <style name="Theme.AEO.Splash" parent="Base.Theme.AEO">
         <item name="android:windowBackground">@drawable/splash_gradient_background</item>
         <item name="android:windowFullscreen">true</item>
