@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- User image dimensions -->
     <dimen name="user_image_size">40dp</dimen>
-
-    <!-- Card image dimensions -->
     <dimen name="card_image_height">200dp</dimen>
     <dimen name="favorites_card_height">280dp</dimen>
-
-    <!-- Heart icon dimensions -->
     <dimen name="heart_icon_size">24dp</dimen>
     <dimen name="favorites_heart_size">32dp</dimen>
     <dimen name="heart_icon_margin">8dp</dimen>
     <dimen name="favorites_heart_margin">12dp</dimen>
     <dimen name="heart_icon_padding">4dp</dimen>
     <dimen name="favorites_heart_padding">6dp</dimen>
-
-    <!-- Back button dimensions -->
     <dimen name="back_button_size">40dp</dimen>
     <dimen name="back_button_padding">8dp</dimen>
 </resources>

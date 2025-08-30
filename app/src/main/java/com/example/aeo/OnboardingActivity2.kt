@@ -15,13 +15,13 @@ class OnboardingActivity2 : AppCompatActivity() {
         val btnSkip: Button = findViewById(R.id.btn_skip)
 
         btnNext.setOnClickListener {
-            // After onboarding2 → go to SignUp
+
             startActivity(Intent(this, Onboarding3::class.java))
             finish()
         }
 
         btnSkip.setOnClickListener {
-            // Skip → go to SignIn
+
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }

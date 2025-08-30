@@ -13,7 +13,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        // Click Listeners
+
         findViewById<TextView>(R.id.txtHelpFaq).setOnClickListener {
             // TODO: Open Help FAQ
         }
@@ -38,8 +38,7 @@ class ProfileActivity : AppCompatActivity() {
             // TODO: Implement logout
         }
 
-        // Bottom Navigation
-        // Bottom Navigation
+
         val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigation.selectedItemId = R.id.nav_profile
         bottomNavigation.setOnItemSelectedListener { item ->

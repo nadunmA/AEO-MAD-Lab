@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:paddingVertical="32dp">
 
-        <!-- Logo Grid with diagonal visual balance -->
         <GridLayout
             android:id="@+id/logoGrid"
             android:layout_width="wrap_content"
@@ -27,7 +26,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/description">
 
-            <!-- Row 1 -->
             <ImageView
                 android:layout_width="88dp"
                 android:layout_height="88dp"
@@ -42,7 +40,7 @@
                 android:contentDescription="@string/copilot_desc"
                 android:scaleType="fitCenter" />
 
-            <!-- Row 2 -->
+
             <ImageView
                 android:layout_width="88dp"
                 android:layout_height="88dp"
@@ -58,7 +56,6 @@
                 android:scaleType="fitCenter" />
         </GridLayout>
 
-        <!-- Description -->
         <TextView
             android:id="@+id/description"
             android:layout_width="0dp"
@@ -76,7 +73,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/startButton" />
 
-        <!-- Get Started Button -->
         <Button
             android:id="@+id/startButton"
             android:layout_width="match_parent"

@@ -7,7 +7,6 @@
     android:background="@drawable/splash_gradient_background"
     android:padding="64dp">
 
-    <!-- Website Preview -->
     <ImageView
         android:id="@+id/web"
         android:layout_width="0dp"
@@ -18,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- QR Code -->
+
     <ImageView
         android:id="@+id/qr"
         android:layout_width="160dp"
@@ -30,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Title -->
+
     <TextView
         android:id="@+id/tv_discover_title"
         android:layout_width="0dp"
@@ -45,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Subtitle -->
+
     <TextView
         android:id="@+id/website_info"
         android:layout_width="0dp"
@@ -59,7 +58,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Skip Button -->
     <Button
         android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
@@ -70,7 +68,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Next Button -->
     <Button
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"

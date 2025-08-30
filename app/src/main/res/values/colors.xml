@@ -1,66 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- 60-30-10 Color Rule Implementation for Solomon App -->
+    <!-- 60-30-10 Color Rule -->
 
-    <!-- PRIMARY COLORS (60% usage) - Main backgrounds and dominant elements -->
-    <!-- Based on your Solomon logo purple gradient -->
-    <color name="primary_color">#8A2BE2</color> <!-- Blue Violet - Main Purple -->
-    <color name="primary_light">#B865C6</color> <!-- Lighter Purple -->
-    <color name="primary_dark">#5D1A8B</color> <!-- Darker Purple -->
-    <color name="primary_variant">#9C27B0</color> <!-- Material Purple -->
-    <color name="background_color">#0D0D1A</color> <!-- Very Dark Blue-Purple -->
+    <!-- PRIMARY COLORS 60% usage -->
+    <color name="primary_color">#8A2BE2</color>
+    <color name="primary_light">#B865C6</color>
+    <color name="primary_dark">#5D1A8B</color>
+    <color name="primary_variant">#9C27B0</color>
+    <color name="background_color">#0D0D1A</color>
 
-    <!-- SECONDARY COLORS (30% usage) - Supporting elements and surfaces -->
-    <!-- Dark grays and blacks from your website theme -->
-    <color name="secondary_color">#1A1A2E</color> <!-- Dark Blue-Gray -->
-    <color name="secondary_light">#2D2D44</color> <!-- Lighter Dark Gray -->
-    <color name="secondary_dark">#0F0F1A</color> <!-- Very Dark -->
-    <color name="secondary_variant">#16213E</color> <!-- Blue-tinged Gray -->
-    <color name="card_background">#1E1E2E</color> <!-- Card backgrounds -->
-    <color name="surface_color">#16162A</color> <!-- Surface elements -->
+    <!-- SECONDARY COLORS (30% usage) -->
+    <color name="secondary_color">#1A1A2E</color>
+    <color name="secondary_light">#2D2D44</color>
+    <color name="secondary_dark">#0F0F1A</color>
+    <color name="secondary_variant">#16213E</color>
+    <color name="card_background">#1E1E2E</color>
+    <color name="surface_color">#16162A</color>
 
-    <!-- ACCENT COLORS (10% usage) - Highlights, CTAs, and emphasis -->
-    <!-- Bright colors for buttons and highlights -->
-    <color name="accent_color">#00D4FF</color> <!-- Bright Cyan - for CTAs -->
-    <color name="accent_light">#4DE0FF</color> <!-- Light Cyan -->
-    <color name="accent_dark">#0096CC</color> <!-- Dark Cyan -->
-    <color name="accent_variant">#1DE9B6</color> <!-- Teal accent -->
+    <!-- ACCENT COLORS (10% usage) -->
+    <color name="accent_color">#00D4FF</color>
+    <color name="accent_light">#4DE0FF</color>
+    <color name="accent_dark">#0096CC</color>
+    <color name="accent_variant">#1DE9B6</color>
 
     <!-- LOGO SPECIFIC COLORS -->
-    <!-- Matching your Solomon logo exactly -->
-    <color name="logo_purple">#8A2BE2</color> <!-- Main logo purple -->
-    <color name="logo_gradient_start">#9C27B0</color> <!-- Gradient start -->
-    <color name="logo_gradient_end">#6A1B9A</color> <!-- Gradient end -->
+    <color name="logo_purple">#8A2BE2</color>
+    <color name="logo_gradient_start">#9C27B0</color>
+    <color name="logo_gradient_end">#6A1B9A</color>
 
     <!-- TEXT COLORS -->
-    <color name="primary_text_color">#FFFFFF</color> <!-- White text on dark -->
-    <color name="secondary_text_color">#B3B3CC</color> <!-- Light gray text -->
-    <color name="accent_text_color">#00D4FF</color> <!-- Cyan text -->
-    <color name="text_on_primary">#FFFFFF</color> <!-- Text on purple -->
-    <color name="text_on_secondary">#FFFFFF</color> <!-- Text on gray -->
-    <color name="text_on_accent">#000000</color> <!-- Text on cyan -->
-    <color name="text_disabled">#666680</color> <!-- Disabled text -->
+    <color name="primary_text_color">#FFFFFF</color>
+    <color name="secondary_text_color">#B3B3CC</color>
+    <color name="accent_text_color">#00D4FF</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_on_accent">#000000</color>
+    <color name="text_disabled">#666680</color>
     <color name="text_sub_section">#CECECE</color>
 
     <!-- GRADIENT COLORS -->
-    <color name="gradient_start">#1A1A2E</color> <!-- Dark start -->
-    <color name="gradient_middle">#6A1B9A</color> <!-- Purple middle -->
-    <color name="gradient_end">#8A2BE2</color> <!-- Bright end -->
+    <color name="gradient_start">#1A1A2E</color>
+    <color name="gradient_middle">#6A1B9A</color>
+    <color name="gradient_end">#8A2BE2</color>
 
-
-    <!-- SYSTEM COLORS -->
-    <color name="error_color">#FF4444</color> <!-- Red for errors -->
-    <color name="success_color">#4CAF50</color> <!-- Green for success -->
-    <color name="warning_color">#FF9800</color> <!-- Orange for warnings -->
-    <color name="info_color">#00D4FF</color> <!-- Cyan for info -->
+    <color name="error_color">#FF4444</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="info_color">#00D4FF</color>
 
     <!-- TRANSPARENCY VARIANTS -->
-    <color name="primary_alpha_10">#1A8A2BE2</color> <!-- 10% purple -->
-    <color name="primary_alpha_20">#338A2BE2</color> <!-- 20% purple -->
-    <color name="primary_alpha_50">#808A2BE2</color> <!-- 50% purple -->
-    <color name="secondary_alpha_10">#1A1A1A2E</color> <!-- 10% dark -->
-    <color name="accent_alpha_10">#1A00D4FF</color> <!-- 10% cyan -->
+    <color name="primary_alpha_10">#1A8A2BE2</color>
+    <color name="primary_alpha_20">#338A2BE2</color>
+    <color name="primary_alpha_50">#808A2BE2</color>
+    <color name="secondary_alpha_10">#1A1A1A2E</color>
+    <color name="accent_alpha_10">#1A00D4FF</color>
 
     <!-- STANDARD COLORS -->
     <color name="white">#FFFFFF</color>
@@ -70,12 +64,12 @@
     <color name="primary_white">#FFFFFF</color>
     <color name="primary_light_gray">#F5F5F5</color>
 
-    <!-- Secondary Colors (30%) - Input fields and secondary elements -->
+    <!-- Secondary Colors (30%) -->
     <color name="secondary_gray">#E0E0E0</color>
     <color name="secondary_dark_gray">#9E9E9E</color>
     <color name="text_gray">#757575</color>
 
-    <!-- Accent Colors (10%) - Buttons and interactive elements -->
+    <!-- Accent Colors (10%) -->
     <color name="accent_black">#000000</color>
     <color name="accent_blue">#1976D2</color>
     <color name="accent_green">#4CAF50</color>
@@ -84,16 +78,12 @@
 
     <color name="text_hint">#BDBDBD</color>
     <color name="divider">#BDBDBD</color>
-
     <color name="primary_background">#FFFFFF</color>
 
-
-    <!-- 30% Secondary Colors - Cards and secondary elements -->
-
+    <!-- 30% Secondary Colors-->
     <color name="secondary_medium">#333333</color>
 
-
-    <!-- 10% Accent Colors - Buttons and highlights -->
+    <!-- 10% Accent Colors -->
     <color name="accent_primary">#007AFF</color>
     <color name="accent_purple">#6366F1</color>
     <color name="accent_orange">#FF9500</color>
@@ -105,12 +95,8 @@
     <color name="skip_text">#999999</color>
 
     <color name="btn_color">#C500FD</color>
-
-
     <color name="colorPrimary">#FFFFFF</color>
     <color name="textPrimary">#000000</color>
-
-    <!-- Additional colors for improved styling -->
     <color name="searchBarColor">#F5F5F5</color>
     <color name="strokeColor">#E0E0E0</color>
     <color name="red">#FF4444</color>

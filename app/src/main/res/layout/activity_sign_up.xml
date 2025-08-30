@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:padding="40dp">
 
-        <!-- Title -->
         <TextView
             android:id="@+id/tv_sign_up_title"
             android:layout_width="wrap_content"
@@ -25,7 +24,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Email Input -->
         <EditText
             android:id="@+id/et_email"
             android:layout_width="0dp"
@@ -45,7 +43,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Name Container -->
         <LinearLayout
             android:id="@+id/ll_name_container"
             android:layout_width="0dp"
@@ -56,7 +53,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <!-- First Name -->
             <EditText
                 android:id="@+id/et_first_name"
                 android:layout_width="0dp"
@@ -74,7 +70,6 @@
                 android:textSize="16sp"
                 android:nextFocusDown="@+id/et_last_name" />
 
-            <!-- Last Name -->
             <EditText
                 android:id="@+id/et_last_name"
                 android:layout_width="0dp"
@@ -93,7 +88,6 @@
                 android:nextFocusDown="@+id/et_password" />
         </LinearLayout>
 
-        <!-- Password Input -->
         <EditText
             android:id="@+id/et_password"
             android:layout_width="0dp"
@@ -113,7 +107,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:nextFocusDown="@+id/et_confirm_password" />
 
-        <!-- Confirm Password Input -->
         <EditText
             android:id="@+id/et_confirm_password"
             android:layout_width="0dp"
@@ -133,7 +126,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:nextFocusDown="@+id/btn_create_account" />
 
-        <!-- Create Account Button -->
         <Button
             android:id="@+id/btn_create_account"
             android:layout_width="220dp"
@@ -148,7 +140,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Already have account section -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

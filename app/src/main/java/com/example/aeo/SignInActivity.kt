@@ -20,14 +20,13 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        // Initialize views
         etEmail = findViewById(R.id.et_email_signin)
         etPassword = findViewById(R.id.et_password_signin)
         btnSignIn = findViewById(R.id.btn_sign_in)
         tvSignUp = findViewById(R.id.tv_sign_up)
         tvForgotPassword = findViewById(R.id.tv_forgot_password)
 
-        // Set click listeners
+
         btnSignIn.setOnClickListener { handleSignIn() }
         tvSignUp.setOnClickListener { navigateToSignUp() }
         tvForgotPassword.setOnClickListener { handleForgotPassword() }

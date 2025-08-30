@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:padding="32dp">
 
-        <!-- User Avatar -->
         <ImageView
             android:id="@+id/iv_user_avatar"
             android:layout_width="80dp"
@@ -26,7 +25,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Title -->
         <TextView
             android:id="@+id/tv_sign_in_title"
             android:layout_width="wrap_content"
@@ -40,7 +38,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_user_avatar" />
 
-        <!-- Email Input -->
         <EditText
             android:id="@+id/et_email_signin"
             android:layout_width="0dp"
@@ -58,7 +55,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_sign_in_title" />
 
-        <!-- Password Input -->
         <EditText
             android:id="@+id/et_password_signin"
             android:layout_width="0dp"
@@ -76,7 +72,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_email_signin" />
 
-        <!-- Forgot Password -->
         <TextView
             android:id="@+id/tv_forgot_password"
             android:layout_width="wrap_content"
@@ -90,7 +85,6 @@
             app:layout_constraintEnd_toEndOf="@id/et_password_signin"
             app:layout_constraintTop_toBottomOf="@id/et_password_signin" />
 
-        <!-- Social Sign In Container -->
         <LinearLayout
             android:id="@+id/ll_social_signin"
             android:layout_width="wrap_content"
@@ -102,7 +96,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_forgot_password">
 
-            <!-- Google Sign In -->
             <ImageView
                 android:id="@+id/iv_google_signin"
                 android:layout_width="48dp"
@@ -117,7 +110,6 @@
                 android:src="@drawable/ic_google"
                 android:fillColor="@color/white"/>
 
-            <!-- OR Text -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +119,6 @@
                 android:textColor="@color/text_secondary"
                 android:textSize="16sp" />
 
-            <!-- Apple Sign In -->
             <ImageView
                 android:id="@+id/iv_apple_signin"
                 android:layout_width="48dp"
@@ -144,7 +135,6 @@
 
         </LinearLayout>
 
-        <!-- Sign In Button -->
         <Button
             android:id="@+id/btn_sign_in"
             android:layout_width="200dp"
@@ -159,7 +149,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ll_social_signin" />
 
-        <!-- Don't have account section -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
-    <!-- Example: Category item title -->
     <TextView
         android:id="@+id/tvCategoryName"
         android:layout_width="match_parent"

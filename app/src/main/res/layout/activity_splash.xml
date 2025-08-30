@@ -9,7 +9,6 @@
     android:background="@drawable/splash_gradient_background"
     tools:context=".SplashActivity">
 
-    <!-- Centered logo and text -->
     <LinearLayout
         android:id="@+id/ll_main_content"
         android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- App Logo -->
         <ImageView
             android:id="@+id/iv_logo"
             android:layout_width="120dp"
@@ -32,7 +30,6 @@
             android:contentDescription="@string/app_logo_description"
             android:scaleType="centerInside" />
 
-        <!-- App Name -->
         <TextView
             android:id="@+id/tv_app_name"
             android:layout_width="wrap_content"
@@ -45,7 +42,6 @@
             android:layout_marginBottom="8dp"
             android:alpha="1" />
 
-        <!-- Tagline -->
         <TextView
             android:id="@+id/tv_tagline"
             android:layout_width="wrap_content"
@@ -58,7 +54,6 @@
 
     </LinearLayout>
 
-    <!-- Loading progress at bottom -->
     <LinearLayout
         android:id="@+id/loading_container"
         android:layout_width="wrap_content"

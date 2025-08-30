@@ -14,11 +14,11 @@ class DiscoverActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discover)
 
-        // Initialize views
+
         btnSkip = findViewById(R.id.btn_skip)
         btnNext = findViewById(R.id.btn_next)
 
-        // Skip → go directly to MainActivity
+
         btnSkip.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -26,7 +26,7 @@ class DiscoverActivity : AppCompatActivity() {
             finish()
         }
 
-        // Next → go to OnboardingActivity2
+
         btnNext.setOnClickListener {
             val intent = Intent(this, OnboardingActivity2::class.java)
             startActivity(intent)

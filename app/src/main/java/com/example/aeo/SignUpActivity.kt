@@ -20,12 +20,12 @@ class SignUpActivity : AppCompatActivity() {
         val btnCreateAccount = findViewById<Button>(R.id.btn_create_account)
         val tvLogin = findViewById<TextView>(R.id.tv_login)
 
-        // Navigate to Login
+
         tvLogin.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
         }
 
-        // Fake signup handling
+
         btnCreateAccount.setOnClickListener {
             if (etPassword.text.toString() == etConfirmPassword.text.toString()) {
                 Toast.makeText(this, "Account created!", Toast.LENGTH_SHORT).show()

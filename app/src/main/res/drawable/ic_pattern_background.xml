@@ -5,13 +5,11 @@
     android:viewportWidth="200"
     android:viewportHeight="200">
 
-    <!-- Rectangle -->
     <path
         android:fillColor="@color/primary_color"
         android:pathData="M50,50 L150,50 L150,150 L50,150 Z"
         android:fillAlpha="0.1"/>
-
-    <!-- Circle as path -->
+    
     <path
         android:fillColor="@color/accent_color"
         android:pathData="M100,20

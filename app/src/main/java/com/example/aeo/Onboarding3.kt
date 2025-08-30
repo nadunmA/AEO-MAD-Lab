@@ -14,7 +14,7 @@ class Onboarding3 : AppCompatActivity() {
         val startButton: Button = findViewById(R.id.startButton)
 
         startButton.setOnClickListener {
-            // After last onboarding → go to MainActivity (or SignUp if you want)
+
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }

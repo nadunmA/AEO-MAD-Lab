@@ -39,7 +39,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun navigateNext() {
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, SignUpActivity::class.java) // show SignUp first
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_DELAY)

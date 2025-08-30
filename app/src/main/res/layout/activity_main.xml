@@ -10,7 +10,6 @@
     android:background="@drawable/splash_gradient_background"
     tools:context=".MainActivity">
 
-    <!-- Main content area -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Greeting Row -->
         <ImageView
             android:id="@+id/imgUser"
             android:layout_width="40dp"
@@ -49,7 +47,6 @@
             app:layout_constraintTop_toTopOf="@id/imgUser"
             app:layout_constraintBottom_toBottomOf="@id/imgUser" />
 
-        <!-- Search Bar -->
         <EditText
             android:id="@+id/edtSearch"
             android:layout_width="0dp"
@@ -66,7 +63,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Filter Buttons Row -->
         <HorizontalScrollView
             android:id="@+id/hsvFilters"
             android:layout_width="0dp"
@@ -85,7 +81,6 @@
                 android:paddingStart="4dp"
                 android:paddingEnd="4dp">
 
-                <!-- Popular (filled) -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnPopular"
                     style="@style/Widget.MaterialComponents.Button"
@@ -98,7 +93,6 @@
                     android:backgroundTint="@color/white"
                     app:cornerRadius="18dp" />
 
-                <!-- Latest (outlined) -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnLatest"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -111,7 +105,6 @@
                     app:cornerRadius="18dp"
                     app:strokeColor="@color/white" />
 
-                <!-- Suggest (outlined) -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSuggest"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -124,7 +117,6 @@
                     app:cornerRadius="18dp"
                     app:strokeColor="@color/white" />
 
-                <!-- Favorites (outlined) -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnFavorites"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -139,7 +131,6 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-        <!-- Images Grid -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll"
             android:layout_width="0dp"
@@ -157,7 +148,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- First Row -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -243,7 +233,6 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
-                <!-- Second Row -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -329,7 +318,7 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
-                <!-- Third Row -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -420,7 +409,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
